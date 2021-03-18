@@ -1,0 +1,145 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gold;
+}
+@keyframes scale-up-center {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.3);
+    }
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    height: 33.333%;
+    background-color: #a2a9b1;
+}
+
+.wrap-element {
+    display: flex;
+    height: 66.666%;
+}
+
+.main {
+    width: 75%;
+    background-color: tomato;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aside {
+    width: 25%;
+    background-color: #a7d7f9;
+}
+.top-article{
+    width: 100%;
+    height: 50%;
+}
+.top-article-head{
+    height: 100%;
+}
+.class-b{
+    background: greenyellow;
+}
+.footer{
+    display: flex;
+    height: 50%;
+    width: 100%;
+}
+.width-33per{
+    width: 33.333%;
+}
+.class-c{
+    background-color: green;
+}
+.class-d{
+    background-color: violet;
+}
+.class-e{
+    background-color: indianred;
+}
+.class-f{
+    background-color: aqua;
+}
+.class-g{
+    background-color: chocolate;
+}
+.container-ankor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ankor1{
+    background-image: url("template1.jpg");
+}
+.ankor2{
+    background-image: url("template2.jpg");
+}
+.ankor3{
+    background-image: url("template3.jpg");
+}
+.template a{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border-radius: 15%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+.template a:hover{
+    background-color: dimgrey;
+    border-radius: 15%;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.template{
+    height: 25%;
+    width: 25%;
+    background-color: silver;
+    margin: 3%;
+    border-radius: 15%;
+}
+@media only screen and (max-width: 700px) {
+    .wrap-element {
+        flex-direction: column;
+        height: 80%;
+    }
+
+    .aside, .main {
+        width: 100%;
+    }
+
+    .header {
+        height: 20%;
+    }
+    .main {
+        height: 75%;
+    }
+
+    .aside {
+        height: 25%;
+    }
+    .top-article{
+        height: 66.666%;
+    }
+    .footer{
+        height: 33.333%;
+    }
+    .height-50per{
+        height: 50%;
+    }
+}
